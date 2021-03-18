@@ -17,7 +17,7 @@
     background-size: contain;
     position: absolute;
     display: grid;
-    animation: expand 1.5s;
+    animation: expand 1.5s ease-out;
   }
   .secondbox{
     height: 250px;
