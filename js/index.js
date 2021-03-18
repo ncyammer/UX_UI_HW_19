@@ -1,12 +1,13 @@
 
-// $(document).ready(function(){
-//     $('.mainArea').css('opacity',0)
-//         .slideDown('slow')
-//         .animate({opacity:1},2000);
-//     $('#mediumCards').css('opacity',0)
-//         .slideDown('slow')
-//         .animate({opacity:1},1000);
-// })
+$("body").ready(function(){
+    $('.mainArea').css('opacity',0)
+        .slideDown('slow')
+        .animate({opacity:1},1000);
+    $('#mediumCards').css('opacity',0)
+        .slideDown('slow')
+        .animate({opacity:1},2000);
+})
+
 
 // $('#mediumCards').ready(function(){
 //     $('.mediumCardstyle').css('display', 'none');

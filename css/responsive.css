@@ -96,7 +96,20 @@
         grid-template-rows: 1fr 1fr 1fr 1fr;
         grid-template-areas: "illustration" "calligraphy" "logoDesign" "eventBanner";
     }
+    #vectorIllustration {
+        margin: 20px 20px 20px 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "rain" "budo" "jesus";
+    }
+    #video {
+        margin: 20px 20px 20px 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "editingreel" "iwatch" "keikotips" "specialeffects";
+    }
     .casestudyCard {
+        margin: 0px auto 0px auto;
         display: flex;
         flex-direction: column-reverse;
     }
@@ -211,6 +224,12 @@
         margin: 20px;
     }
     #artowrk {
+        margin: 20px;
+    }
+    #video {
+        margin: 20px;
+    }
+    #vectorIllustration {
         margin: 20px;
     }
 }

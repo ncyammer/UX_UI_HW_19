@@ -24,6 +24,10 @@ body {
     float: right;
 }
 
+.pageheader{
+    text-align: center;
+}
+
 /* Typography */
 h1 {
     font-family: 'Audiowide', cursive;
@@ -41,6 +45,14 @@ h4 {
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
 }
+.cardheader {
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    font-family: 'Audiowide', cursive;
+    line-height: 1.29;
+    letter-spacing: normal;
+}
 h5 {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
@@ -56,6 +68,9 @@ li {
 .bold {
     font-weight: bold;
 }
+a{
+    text-decoration: none;
+}
 
 /* Nav Bar */
 .topnav {
@@ -68,7 +83,7 @@ li {
     position: relative;
     top: 0px;
     z-index: 1000;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
 }
 
 
@@ -324,23 +339,23 @@ footer a{
     grid-template-areas: "fcccaseStudy wbwcaseStudy";
 }
 
-#casestudies h4 {
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    font-family: 'Audiowide', cursive;
-    line-height: 1.29;
-    letter-spacing: normal;
-}
-
 .casestudyCard {
     height: 312px;
     width: 500px;
+    text-decoration: none;
     background-position: top;
     background-size: 100%;
     background-repeat: no-repeat;
     cursor: pointer;
-    transition: all .3s ease-in-out
+    transition: all .3s ease-in-out;
+}
+
+.cardlink{
+    margin: 0 auto 0 auto;
+}
+
+.casestudyCard a{
+    text-decoration: none;
 }
 
 .casestudyCard:hover {
@@ -380,7 +395,7 @@ footer a{
 /* ARTWORK PAGE */
 
 #artwork {
-    margin: 40px 140px 80px 140px;
+    margin: 80px 140px 80px 140px;
     width: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -390,15 +405,6 @@ footer a{
     justify-content: center;
     align-content: center;
     grid-template-areas: "illustration calligraphy" "logoDesign eventBanner";
-}
-
-#artwork h4 {
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    font-family: 'Audiowide', cursive;
-    line-height: 1.29;
-    letter-spacing: normal;
 }
 
 #illustrationCard {
@@ -425,10 +431,44 @@ footer a{
     place-self: center;
 }
 
+/* VECTOR ART PAGE */
+
+#vectorIllustration {
+    margin: 80px 140px 80px 140px;
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 20px;
+    row-gap: 20px;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas: "rain budo" "jesus .";
+}
+
+#rainCard {
+    background-image: url(../images/artwork/rainCard.png), url(../images/alternate_card.png);
+    grid-area: rain;
+    place-self: center;
+}
+
+#budoCard {
+    background-image: url(../images/artwork/budoCard.png), url(../images/alternate_card.png);
+    grid-area: budo;
+    place-self: center;
+}
+
+#jesusCard {
+    background-image: url(../images/artwork/pabelCard.png), url(../images/alternate_card.png);
+    grid-area: jesus;
+    place-self: center;
+}
+
+
 /* VIDEO PAGE */
 
 #video {
-    margin: 40px 140px 80px 140px;
+    margin: 80px 140px 80px 140px;
     width: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -438,15 +478,6 @@ footer a{
     justify-content: center;
     align-content: center;
     grid-template-areas: "editingreel iwatch" "keikotips specialeffects";
-}
-
-#video h4 {
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    font-family: 'Audiowide', cursive;
-    line-height: 1.29;
-    letter-spacing: normal;
 }
 
 #editingReelCard {
