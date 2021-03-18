@@ -1,12 +1,17 @@
+function fade() {
+    $('.loadingScreen').fadeOut("slow");
+    }
+    setTimeout(fade, 2000);
 
-$("body").ready(function(){
-    $('.mainArea').css('opacity',0)
-        .slideDown('slow')
-        .animate({opacity:1},1000);
-    $('#mediumCards').css('opacity',0)
-        .slideDown('slow')
-        .animate({opacity:1},2000);
-})
+
+// $("body").ready(function(){
+//     $('.mainArea').css('opacity',0)
+//         .slideDown(500)
+//         .animate({opacity:1},500);
+//     $('#mediumCards').css('opacity',0)
+//         .slideDown('slow')
+//         .animate({opacity:1},500);
+// })
 
 
 // $('#mediumCards').ready(function(){
@@ -32,10 +37,9 @@ $("body").ready(function(){
 //     $('#loadingScreen').fadeOut('5000');
 // });
 
-$(document).ready(function(){
-    $(body).css('opacity',0)
-    .animate({opacity:1},'slow');
-});
+// $(document).ready(function(){
+//     $(document).fadeIn(5000);
+// });
 
 $('#hamburgermenu').on("click", function(){
     $(".mobilenavigation").slideToggle();
