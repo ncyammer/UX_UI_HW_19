@@ -3,6 +3,17 @@ function fade() {
     }
     setTimeout(fade, 2000);
 
+$('#hamburgermenu').on("click", function(){
+    $(".mobilenavigation").slideToggle();
+    $(".openMenu").toggle();
+    $(".closeMenu").toggle();
+});
+
+// var w = screen.width;
+// if (screen.width < 500){
+//     $(".casestudyCard").css("width", w);
+// } else {};
+
 
 // $("body").ready(function(){
 //     $('.mainArea').css('opacity',0)
@@ -40,9 +51,3 @@ function fade() {
 // $(document).ready(function(){
 //     $(document).fadeIn(5000);
 // });
-
-$('#hamburgermenu').on("click", function(){
-    $(".mobilenavigation").slideToggle();
-    $(".openMenu").toggle();
-    $(".closeMenu").toggle();
-});
