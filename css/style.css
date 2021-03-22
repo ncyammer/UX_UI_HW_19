@@ -24,27 +24,32 @@ body {
     float: right;
 }
 
-.pageheader{
+.pageheader {
     text-align: center;
 }
 
 /* Typography */
+
 h1 {
     font-family: 'Audiowide', cursive;
     font-size: 48px;
 }
+
 h2 {
     font-family: 'Audiowide', cursive;
     font-size: 42px;
 }
+
 h3 {
     font-family: 'Roboto', sans-serif;
     font-size: 36px;
 }
+
 h4 {
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
 }
+
 .cardheader {
     font-weight: normal;
     font-stretch: normal;
@@ -53,26 +58,32 @@ h4 {
     line-height: 1.29;
     letter-spacing: normal;
 }
+
 h5 {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
 }
+
 p {
     font-family: 'Roboto', sans-serif;
     font-size: 16pt;
 }
+
 li {
     font-family: 'Roboto', sans-serif;
     font-size: 16pt;
 }
+
 .bold {
     font-weight: bold;
 }
-a{
+
+a {
     text-decoration: none;
 }
 
 /* Nav Bar */
+
 .topnav {
     height: 80px;
     width: 100%;
@@ -86,7 +97,6 @@ a{
     margin-bottom: 40px;
 }
 
-
 .navigation {
     list-style-type: none;
     height: 26px;
@@ -96,11 +106,13 @@ a{
     justify-content: space-around;
     align-content: center;
 }
+
 .topnav li {
     height: 20px;
     padding: 0px 20px;
     margin: 0px 20px;
 }
+
 .topnav li a {
     color: white;
     text-align: center;
@@ -109,6 +121,7 @@ a{
     font-family: 'Audiowide';
     font-size: 18px;
 }
+
 li a:hover {
     color: #FF0000;
 }
@@ -119,19 +132,23 @@ li a:hover {
     display: none;
     position: absolute;
 }
-.openMenu{
+
+.openMenu {
     position: absolute;
 }
-.closeMenu{
+
+.closeMenu {
     position: absolute;
     display: none;
 }
+
 .mobilenavigation {
     display: none;
     z-index: 105;
 }
 
 /* Logo Area */
+
 .mainArea {
     margin-top: 40px;
     margin-bottom: 40px;
@@ -172,24 +189,18 @@ li a:hover {
     grid-area: uxdesignCard;
     background-image: url(../images/ux-hp-card@3x.png), url(../images/alternate\ medium\ card.png);
     background-color: #484848;
-    min-height: 250px;
-    height: auto;
 }
 
 #artworkCard {
     grid-area: artworkCard;
     background-image: url(../images/artwork-hp-card@3x.jpg), url(../images/alternate\ medium\ card.png);
     background-color: #484848;
-    min-height: 250px;
-    height: auto;
 }
 
 #videoCard {
     grid-area: videoCard;
     background-image: url(../images/video-hp-card@3x.png), url(../images/alternate\ medium\ card.png);
     background-color: #484848;
-    min-height: 250px;
-    height: auto;
 }
 
 .mediumCardstyle {
@@ -202,6 +213,7 @@ li a:hover {
     display: grid;
     align-content: end;
     transition: all .2s linear;
+    height: 280px;
 }
 
 .mediumCardstyle h4 {
@@ -267,7 +279,7 @@ footer h5 {
     text-align: center;
 }
 
-footer a{
+footer a {
     text-decoration: none;
 }
 
@@ -350,13 +362,15 @@ footer a{
     background-repeat: no-repeat;
     cursor: pointer;
     transition: all .3s ease-in-out;
+    display: flex;
+    flex-direction: column-reverse;
 }
 
-.cardlink{
+.cardlink {
     margin: 0 auto 0 auto;
 }
 
-.casestudyCard a{
+.casestudyCard a {
     text-decoration: none;
 }
 
@@ -393,6 +407,41 @@ footer a{
     color: white;
     background-color: rgba(0, 0, 0, 0.7);
 }
+
+/* ALTERNATE CARD HOVER (PAIRED WITH JQUERY,
+USE ONLY .cardHover and .cardHover p) */
+/* .cardHover {
+    height: 15%;
+    padding: 15px;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+    transition: all .3s ease-in-out
+}
+.cardHover p {
+    display: none;
+    transition: all .3s ease-in-out
+} */
+/* .casestudyCard:hover .cardHover{
+    height: 100%;
+    transition: all .3s ease-in-out
+}
+.casestudyCard:hover .cardHover p{
+    display: inline;
+    transition: all .3s ease-in-out;
+    animation: fadeIn ease-in-out .3s;
+}
+@keyframes fadeIn{
+    0% {
+        display: inline;
+        opacity: 0;
+    }
+    100% {opacity: 1;}
+} */
 
 /* ARTWORK PAGE */
 
@@ -466,7 +515,6 @@ footer a{
     place-self: center;
 }
 
-
 /* VIDEO PAGE */
 
 #video {
@@ -505,4 +553,3 @@ footer a{
     grid-area: specialeffects;
     place-self: center;
 }
-

@@ -9,6 +9,22 @@ $('#hamburgermenu').on("click", function(){
     $(".closeMenu").toggle();
 });
 
+// ALTERNATE CARD HOVER (PAIRED WITH CSS)
+// $('.casestudyCard').hover(function(){
+//     $(this).css("background-size", "110%");
+//     $(this).find('.cardHover').css("height", "100%");
+//     if($(this).has("p")){
+//         $(this).find("p").css("display", "inline").animate({opacity:1});
+//     } else{
+//         $(this).find("p").css("display", "none");
+//     }}, function() {
+//         $(this).find('.cardHover').css("height", "15%");
+//         if ($(this).has("p") || $(this).find("p").css("opacity") == "1") {
+//             $(this).find("p").css("display", "none");
+//         } else {$(this).find("p").css("display", "none");}
+//         $(this).css("background-size", "100%");
+//     });
+
 // var w = screen.width;
 // if (screen.width < 500){
 //     $(".casestudyCard").css("width", w);

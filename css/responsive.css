@@ -1,4 +1,15 @@
-@media only screen and (max-width: 1000px){
+@media only screen and (min-width: 1450px){
+    .casestudyCard{
+        height: 468px;
+        width: 750px;
+    }
+    .cardHover{
+        height: 468px;
+
+    }
+}
+
+@media only screen and (max-width: 1024px){
     .topnav li a {
         font-size: 16px;
     }
@@ -78,7 +89,11 @@
         row-gap: 20px;
         grid-template-areas: "uxdesignCard" "artworkCard" "videoCard";
     }
-    .mediumCardstyle:hover {
+    #uxdesignCard, #artworkCard, #videoCard{
+        height: 350px;
+    }
+    
+    .mediumCardstyle {
         background-size: cover;
     }
     /* Footer */
@@ -247,7 +262,7 @@
     #casestudies {
         margin: 20px;
     }
-    #artowrk {
+    #artwork {
         width: 100%;
         margin: 20px;
     }
@@ -260,9 +275,19 @@
 }
 
 @media only screen and (max-width: 500px) {
+    
+    #uxdesignCard, #artworkCard, #videoCard{
+        width: 320px;
+        height: 200px;
+        margin: 0;
+    }
+    #mediumCards a{
+        justify-self:center
+    }
     .cardlink, .casestudyCard{
         width: 320px;
         height: 200px;
         margin: 0;
+        justify-self:center
     }
 }
